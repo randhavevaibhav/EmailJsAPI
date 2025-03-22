@@ -10,6 +10,7 @@ const { PORT, whiteListSites } = config;
 app.use(
   cors({
     origin: whiteListSites,
+    credentials: true,
   })
 );
 app.use(express.json());

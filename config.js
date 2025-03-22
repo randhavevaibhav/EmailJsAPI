@@ -9,7 +9,10 @@ const config = {
     emailjsPublicKey: process.env.EMAILJS_PUBLIC_KEY,
     emailjsPrivateKey: process.env.EMAILJS_PRIVATE_KEY,
     PORT: process.env.DEFAULT_PORT,
-    whiteListSites: [process.env.REACT_PORTFOLIO],
+    whiteListSites: [
+      process.env.REACT_PORTFOLIO_PROD,
+      process.env.REACT_PORTFOLIO_DEV,
+    ],
   },
 };
 

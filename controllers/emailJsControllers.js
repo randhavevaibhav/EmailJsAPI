@@ -21,7 +21,8 @@ export const emailJsControllers = async (req, res) => {
 
     const templateParams = {
       name,
-      email,
+      user_mail: email,
+      message,
     };
     const result = await emailjs.send(
       emailJsServiceId,
